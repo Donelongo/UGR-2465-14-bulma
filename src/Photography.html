@@ -1,81 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="./Images/name-logo.png">
-    <title>Photography</title>
-</head>
-<body>
-    <header>
-        <div class="logo-image">
-            <img src="/src/Images/name-logo.png" alt="Me">
-        </div>
-        <nav class="Navbar">
-            <ul>
-                <li><a href="/src/Home.html">Home</a></li>
-                <li><a href="/src/Accomp.html">Accomplishemnts</a></li>
-                <li><a href="/src/Hobbies.html">Hobbies</a></li>
-                <li><a href="/src/Travels.html">Travels</a></li>
-                <li><a href="/src/Photography.html">Photography</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div>
-            <p>
-                Photography is my lens to the world, a hobby turned passion. Through the camera's eye, I capture stories, emotions, and fleeting moments. Exploring different angles and settings, I unravel the beauty in everyday scenes. Each click is a creative expression, a way to freeze time and share unique perspectives. In photography, I find an art form that allows me to convey emotions without words.  
-            </p>
-        </div>
-        <div class="images">
-            <div id="first-image">
-                <img src="/src/Images/IMG_1025.JPG" alt="my-photography">
-            </div>
-            <div id="second-image">
-                <img src="/src/Images/IMG_20210212_092826_692.jpg" alt="my-photography">
-            </div>
-            <div id="third-image">
-                <img src="/src/Images/IMG_20210212_092836_623.jpg" alt="my-photography">
-            </div>
-            <div id="fourth-image">
-                <img src="/src/Images/IMG_20210212_092844_876.jpg" alt="my-photography">
-            </div>
-            <div id="fifth-image">
-                <img src="/src/Images/IMG_20211221_172455.jpg" alt="my-photography">
-            </div>
-            <div id="sixth-image">
-                <img src="/src/Images/IMG_20220103_074112.jpg" alt="my-photography">
-            </div>
-            <div id="seventh-image">
-                <img src="/src/Images/IMG_20220125_110128.jpg" alt="my-photography">
-            </div>
-            <div id="eith-image">
-                <img src="/src/Images/IMG_20220126_133131.jpg" alt="my-photography">
-            </div>
-            <div id="nineth-image">
-                <img src="/src/Images/IMG_20220327_200356.jpg" alt="my-photography">
-            </div>
-        </div>
-        </main>
-        <footer>
-            <div class="socialmedia">
-                <div class="icon">
-                    <a href="https://www.instagram.com/dagmawi_elias/"><img src="/src/Images/instagram.svg" alt="Instagram Icon"></a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="./Images/name-logo.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <title>Photography</title>
+    </head>
+    <body class="has-background-grey-darker m-0 is-full">
+        <header>
+            <nav class="navbar is-black">
+                <div class="navbar-brand">
+                    <div>
+                        <img src="/src/Images/name-logo.png" alt="site-logo"  class="image is-96x96 mx-2">
+                    </div>
+                    
+                    <a class="navbar-burger mt-4 mb-4 mr-4" id="burger" >
+                        <span ></span>
+                        <span ></span>
+                        <span ></span>
+                    </a>
                 </div>
-                <div class="icon">
-                    <a href="https://twitter.com/elias_dagmawi"><img src="/src/Images/twitter.svg" alt="Twitter Icon"></a>
+                <div class="navbar-menu has-background-black" id="nav-links">
+                    <div class="navbar-end ">
+                        <a href="/src/Home.html" class="has-text-light navbar-item has-background-black is-hoverable pr-6">Home</a>
+                        <a href="/src/Accomp.html" class="has-text-light navbar-item has-background-black is-hoverable pr-6">Accomplishemnts</a>
+                        <a href="/src/Hobbies.html" class="has-text-light navbar-item has-background-black is-hoverable pr-6">Hobbies</a>
+                        <a href="/src/Travels.html" class="has-text-light navbar-item has-background-black is-hoverable pr-6">Travels</a>
+                        <a href="/src/Photography.html" class="has-text-warning navbar-item has-background-black is-hoverable pr-6">Photography</a>
+                    </div>
                 </div>
-                <div class="icon">
-                    <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/"><img src="/src/Images/linkedin.svg" alt="Linkedin Icon"></a>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <p class="has-text-light is-size-6  is-size-4-desktop pl-3 pr-2">
+                    <span class="is-size-2 is-capitalized has-text-warning">P</span>hotography is my lens to the world, a hobby turned passion. Through the camera's eye, I capture stories, emotions, and fleeting moments. Exploring different angles and settings, I unravel the beauty in everyday scenes. Each click is a creative expression, a way to freeze time and share unique perspectives. In photography, I find an art form that allows me to convey emotions without words.  
+                </p>
+            </div>
+            <br/>
+            <div class="container">
+                <div class="columns is-vcentered is-flex is-flex-direction-row">
+                    <div class="is-1 has-text-centered">
+                        <button id="carousel-landscape-prev" class="button">
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z"/></svg>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <div class="landscape is-hidden">
+                            <figure>
+                                <a href="/src/Images/IMG_1025.JPG"><img src="/src/Images/IMG_1025.JPG" alt="my-photography"></a>
+                            </figure>
+                        </div>
+                        <div class="landscape is-hidden">
+                            <figure>
+                                <a href="/src/Images/IMG_20210212_092836_623.jpg"><img src="/src/Images/IMG_20210212_092836_623.jpg" alt="my-photography"></a>
+                            </figure>
+                        </div>
+                        <div class="landscape is-hidden">
+                            <figure>
+                                <a href="/src/Images/IMG_20210212_092844_876.jpg"><img src="/src/Images/IMG_20210212_092844_876.jpg" alt="my-photography"></a>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="is-1 has-text-centered m-5">
+                        <button id="carousel-landscape-next" class="button">
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="columns is-vcentered is-flex is-flex-direction-row">
+                    <div class="is-1 has-text-centered m-5">
+                        <button id="carousel-portrait-prev" class="button">
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z"/></svg>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <div class="portrait is-hidden">
+                            <figure>
+                                <a href="/src/Images/IMG_20210212_092826_692.jpg"><img src="/src/Images/IMG_20210212_092826_692.jpg" alt="my-photography"></a>
+                            </figure>
+                        </div>
+                        <div class="portrait is-hidden">
+                            <figure>
+                                <a href="/src/Images/IMG_20211221_172455.jpg"><img src="/src/Images/IMG_20211221_172455.jpg" alt="my-photography"></a>
+                            </figure>
+                        </div>
+                        <div class="portrait is-hidden">
+                            <figure>
+                                <a href="/src/Images/IMG_20220103_074112.jpg"><img src="/src/Images/IMG_20220103_074112.jpg" alt="my-photography"></a>
+                            </figure>
+                        </div>
+                        <div class="portrait is-hidden">
+                            <figure>
+                                <a href="/src/Images/IMG_20220125_110128.jpg"><img src="/src/Images/IMG_20220125_110128.jpg" alt="my-photography"></a>
+                            </figure>
+                        </div>
+                        <div class="portrait is-hidden">
+                            <figure>
+                                <a href="/src/Images/IMG_20220126_133131.jpg"><img src="/src/Images/IMG_20220126_133131.jpg" alt="my-photography"></a>
+                            </figure>
+                        </div>
+                        <div class="portrait is-hidden">
+                            <figure>
+                                <a href="/src/Images/IMG_20220327_200356.jpg"><img src="/src/Images/IMG_20220327_200356.jpg" alt="my-photography"></a>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="is-1 has-text-centered m-5">
+                        <button id="carousel-portrait-next" class="button">
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>
+                        </button>
+                    </div>
                 </div>
             </div>
-    
-            <div class="contact">
-                    <div class="Name">Dagmawi Elias</div>
-                    <div class="Phone Number"><img src="/src/Images/phone-solid.svg" alt="phone logo"></div>
-                    <div class="email"><img src="/src/Images/at-solid.svg" alt="@ logo"></div>
-                    <div class="address"><img src="/src/Images/location-dot-solid.svg" alt="location logo"></div>
+    </main>
+    <footer class="footer has-background-grey columns has-gap m-0"> 
+        <div class="column">
+            <div class="columns ">
+                <div class="column">
+                    <a href="https://www.instagram.com/dagmawi_elias/">
+                        <img src="/src/Images/instagram.svg" class="image is-48x48 mx-2" alt="Instagram Icon">
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="https://twitter.com/elias_dagmawi">
+                        <img src="/src/Images/twitter.svg" class="image is-48x48 mx-2" alt="Twitter Icon"></a>
+                </div>
+                <div class="column">
+                    <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/">
+                        <img src="/src/Images/linkedin.svg" class="image is-48x48 mx-2" alt="Linkedin Icon">
+                    </a>
+                </div>
             </div>
-        </footer>
+        </div>
+
+        <div class="column">
+                <div class="columns">
+                    <img src="/src/Images/phone-solid.svg" class="column image is-64x64 is-2 mx-" alt="phone logo" >
+                    <a href="tel:+251-911-110-650" class="has-text-light is-underlined column">Phone Number: +(251) 911-1106-50</a>
+                </div>
+                <div class="columns">
+                    <img src="/src/Images/at-solid.svg" class="column image is-64x64 is-2 mx" alt="@ logo">
+                    <a href="mailto:dagmawielias2@gmail.com" class="column has-text-light is-underlined">dagmawielias2@gmail.com</a> 
+                </div>
+                <div class="columns">
+                    <img src="/src/Images/location-dot-solid.svg" class="column image is-64x64 is-2 mx" alt="location logo">
+                    <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="column has-text-light is-underlined">
+                        Addis Ababa Institue of Technology
+                    </a>
+                </div>
+        </div>
+    </footer>
+    <script src="/src/Java Script/Navigatioin-Bar.js"></script>
+    <script src="/src/Java Script/Photography.js"></script>
     </body>
 </html>

@@ -4,83 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./Images/name-logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>Accomplishemnts</title>
 </head>
-<body>
+<body class="has-background-grey-darker">
     <header>
-        <div class="logo-image">
-            <img src="/src/Images/name-logo.png" alt="Me">
-        </div>
-        <nav class="Navbar">
-            <ul>
-                <li><a href="/src/Home.html">Home</a></li>
-                <li><a href="/src/Accomp.html">Accomplishemnts</a></li>
-                <li><a href="/src/Hobbies.html">Hobbies</a></li>
-                <li><a href="/src/Travels.html">Travels</a></li>
-                <li><a href="/src/Photography.html">Photography</a></li>
-            </ul>
+        <nav class="navbar is-black pl1 pr-6-desktop">
+            <div class="navbar-brand">
+                <div>
+                    <img src="/src/Images/name-logo.png" alt="site-logo"  class="image is-96x96 mx-2">
+                </div>
+                
+                <a class="navbar-burger mt-4 mb-4 mr-4" id="burger" >
+                    <span ></span>
+                    <span ></span>
+                    <span ></span>
+                  </a>
+            </div>
+            <div class="navbar-menu has-background-black" id="nav-links">
+                <div class="navbar-end ">
+                    <a href="/src/Home.html" class="has-text-light navbar-item has-background-black is-hoverable pr-6">Home</a>
+                    <a href="/src/Accomp.html" class="has-text-warning navbar-item has-background-black is-hoverable pr-6">Accomplishemnts</a>
+                    <a href="/src/Hobbies.html" class="has-text-light navbar-item has-background-black is-hoverable pr-6">Hobbies</a>
+                    <a href="/src/Travels.html" class="has-text-light navbar-item has-background-black is-hoverable pr-6">Travels</a>
+                    <a href="/src/Photography.html" class="has-text-light navbar-item has-background-black is-hoverable pr-6">Photography</a>
+                 </div>
+            </div>
+
         </nav>
     </header>
+
     <main>
-        <h1>Education</h1>
-        <div id="first-accomplishment">
-            <img src="/src/Images/Cisco_networking.png" alt="accmplishment image">
-            <aside>
-                <h2>Cisco Networking Academy</h2>
-                <p>
-                    I earned my Cisco Academy certificate by completing rigorous courses and passing certification exams through the Cisco Networking Academy. This comprehensive training equipped me with valuable networking skills, paving the way for career advancement in the tech industry.
+        <h1 class="title is-size-1-desktop has-text-light has-text-centered mt-5">Education</h1>
+        <div class="columns is-vcentered" id="first-accomplishment">
+            <figure class="column">
+                <a href="/src/Images/Cisco_networking.png"> <img src="/src/Images/Cisco_networking.png" class="p-3" alt="accmplishment image"></a>
+                <figcaption class="has-text-info has-text-centered">Fig: Cisco Networking Academy Certeficate</figcaption>
+            </figure>            
+            <aside class="column">
+                <h2 class="sub-title is-size-2-desktop has-text-centered is-size-4 has-text-light">Cisco Networking Academy</h2>
+                <p class="has-text-light is-size-6  is-size-4-desktop pl-3 pr-2">
+                    <span class="is-size-2 is-capitalized has-text-warning">I</span> earned my Cisco Academy certificate by completing rigorous courses and passing certification exams through the Cisco Networking Academy. This comprehensive training equipped me with valuable networking skills, paving the way for career advancement in the tech industry.
                 </p>
             </aside>
         </div>
-        <div id="second-accomplishment">
-            <img src="/src/Images/cisco_PT.png" alt="accomplishment image">
-            <aside>
-                <h2>Cisco Packet Tracer</h2>
-                <p>
-                    
-I obtained my Cisco Packet Tracer certification by engaging in extensive coursework and successfully passing assessments offered through the Cisco Networking Academy. This immersive training equipped me with hands-on experience in network simulation, strengthening my proficiency in networking technologies essential for real-world applications within the tech industry.
+        <div class="columns is-vcentered" id="second-accomplishment">
+            <figure class="column">
+                <a href="/src/Images/cisco_PT.png"> <img src="/src/Images/cisco_PT.png" class="p-3" alt="accomplishment image"></a>
+                <figcaption class="has-text-info has-text-centered">Fig: Cisco Packet Tracer Certeficate</figcaption>
+            </figure>
+            <aside class="column has-text-vcentered">
+                <h2 class="sub-title has-text-centered is-size-2-desktop is-size-4 has-text-light">Cisco Packet Tracer</h2>
+                <p class="has-text-light is-size-4-desktop is-size-6 pl-3 pr-2">   
+                    <span class="is-size-2 is-capitalized has-text-warning">I</span> obtained my Cisco Packet Tracer certification by engaging in extensive coursework and successfully passing assessments offered through the Cisco Networking Academy. This immersive training equipped me with hands-on experience in network simulation, strengthening my proficiency in networking technologies essential for real-world applications within the tech industry.
                 </p>
             </aside>
         </div>
-        <div id="third-accomplishment">
-            <img src="/src/Images/Redhat.png" alt="accomplishment image">
-            <aside>
-                <h2>Redhat</h2>
-                <p>
-                    I earned my Redhat certificate by completing rigorous courses and passing certification exams through the Redhat Academy. This comprehensive training equipped me with valuable Linux skills, paving the way for career advancement in the tech industry.
+        <div class="columns is-vcentered" id="third-accomplishment">
+            <figure class="column">
+                <a href="/src/Images/Redhat.png"><img src="/src/Images/Redhat.png" class="p-3" alt="accomplishment image"></a>
+                <figcaption class="has-text-info has-text-centered">Fig: Redhat Certeficate</figcaption>
+            </figure>
+            <aside class="column">
+                <h2 class="sub-title is-size-2-desktop has-text-centered is-size-4 has-text-light">Redhat</h2>
+                <p class="has-text-light is-size-4-desktop is-size-6 pl-3 pr-2">
+                    <span class="is-size-2 is-capitalized has-text-warning">I</span> earned my Redhat certificate by completing rigorous courses and passing certification exams through the Redhat Academy. This comprehensive training equipped me with valuable Linux skills, paving the way for career advancement in the tech industry.
                 </p>
             </aside>
         </div>
-        <h1>Extra-curriculum</h1>
-        <div id="first-extra-accomplishment">
-            <img src="/src/Images/tasties_basketball.jpg" alt="accomplishment image">
-            <aside>
-                <h2>Tasties Basketball Acadamy</h2>
-                <p>
-                    I was a member of the Tasties Basketball Academy for 1 years. I was a member of the team that won the 2018/19 Ethiopian Basketball Federation (EBF) U-18 championship. I was also a member of the team that won the 2019/20 EBF U-20 championship.
-                </p>
-            </aside>
+        <h2 class="sub-title is-size-4 has-text-light has-text-centered mt-5">My education in Table </h2>
+        <div class="columns m-3">
+            <div>
+                <table class="column table is-striped is-hoverable is-fullwidth p-0 mt-5 mb-5">
+                    <tr>
+                    <th class="is-dark has-text-warning has-text-centered">Level</th>
+                    <th class="is-dark has-text-warning has-text-centered">School</th>
+                    <th class="is-dark has-text-warning has-text-centered">Year</th>
+                    </tr>
+                    <tr>
+                    <td class="is-warning has-text-dark">UKG/KG</td>
+                    <td class="is-warning has-text-dark">St.Mary</td>
+                    <td class="is-warning has-text-dark">2006</td>
+                    </tr>
+                    <tr>
+                    <td class="is-dark has-text-light">Primary school</td>
+                    <td class="is-dark has-text-light">Lideta Catholic Cathedral School</td>
+                    <td class="is-dark has-text-light">2009</td>
+                    </tr>
+                    <tr>
+                    <td class="is-warning has-text-dark">Secondary/High school</td>
+                    <td class="is-warning has-text-dark">Lideta Catholic Cathedral School</td>
+                    <td class="is-warning has-text-dark">2018</td>
+                    </tr>
+                    <tr>
+                    <td class="is-dark has-text-light">University</td>
+                    <td class="is-dark has-text-light">Addis Ababa University</td>
+                    <td class="is-dark has-text-light">2022</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div>
+            <h1 class="title is-size-1-desktop has-text-light has-text-centered mt-5">Extra-curriculum</h1>
+            <div class="columns is-vcentered" id="first-extra-accomplishment">
+                <figure class="column">
+                    <a href="/src/Images/tasties_basketball.jpg"><img src="/src/Images/tasties_basketball.jpg" class="p-3" alt="accomplishment image"></a>
+                    <figcaption class="has-text-info has-text-centered">Fig: Tasties Basketball Academy</figcaption>
+                </figure>
+                <aside class="column">
+                    <h2 class="sub-title is-size-2-desktop has-text-centered is-size-4 has-text-light">Tasties Basketball Acadamy</h2>
+                    <p class="has-text-light is-size-4-desktop is-size-6 pl-3 pr-2">
+                        <span class="is-size-2 is-capitalized has-text-warning">I</span> was a member of the Tasties Basketball Academy for 1 years. I was a member of the team that won the 2018/19 Ethiopian Basketball Federation (EBF) U-18 championship. I was also a member of the team that won the 2019/20 EBF U-20 championship.
+                    </p>
+                </aside>
+            </div>
         </div>
     </main>
-    <footer>
-        <div class="socialmedia">
-            <div class="icon">
-                <a href="https://www.instagram.com/dagmawi_elias/"><img src="/src/Images/instagram.svg" alt="Instagram Icon"></a>
-            </div>
-            <div class="icon">
-                <a href="https://twitter.com/elias_dagmawi"><img src="/src/Images/twitter.svg" alt="Twitter Icon"></a>
-            </div>
-            <div class="icon">
-                <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/"><img src="/src/Images/linkedin.svg" alt="Linkedin Icon"></a>
+    <footer class="footer has-background-grey columns has-gap">
+        <div class="column">
+            <div class="columns">
+                <div class="column">
+                    <a href="https://www.instagram.com/dagmawi_elias/">
+                        <img src="/src/Images/instagram.svg" class="image is-48x48 mx-2" alt="Instagram Icon">
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="https://twitter.com/elias_dagmawi">
+                        <img src="/src/Images/twitter.svg" class="image is-48x48 mx-2" alt="Twitter Icon"></a>
+                </div>
+                <div class="column">
+                    <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/">
+                        <img src="/src/Images/linkedin.svg" class="image is-48x48 mx-2" alt="Linkedin Icon">
+                    </a>
+                </div>
             </div>
         </div>
 
-        <div class="contact">
-                <div class="Name">Dagmawi Elias</div>
-                <div class="Phone Number"><img src="/src/Images/phone-solid.svg" alt="phone logo"></div>
-                <div class="email"><img src="/src/Images/at-solid.svg" alt="@ logo"></div>
-                <div class="address"><img src="/src/Images/location-dot-solid.svg" alt="location logo"></div>
+        <div class="column">
+                <div class="columns">
+                    <img src="/src/Images/phone-solid.svg" class="column image is-64x64 is-2 mx-" alt="phone logo" >
+                    <a href="tel:+251-911-110-650" class="has-text-light is-underlined column">Phone Number: +(251) 911-1106-50</a>
+                </div>
+                <div class="columns">
+                    <img src="/src/Images/at-solid.svg" class="column image is-64x64 is-2 mx" alt="@ logo">
+                    <a href="mailto:dagmawielias2@gmail.com" class="column has-text-light is-underlined">dagmawielias2@gmail.com</a> 
+                </div>
+                <div class="columns">
+                    <img src="/src/Images/location-dot-solid.svg" class="column image is-64x64 is-2 mx" alt="location logo">
+                    <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="column has-text-light is-underlined">
+                        Addis Ababa Institue of Technology
+                    </a>
+                </div>
         </div>
     </footer>
+    <script src="/src/Java Script/Navigatioin-Bar.js"></script>
 </body>
 </html>

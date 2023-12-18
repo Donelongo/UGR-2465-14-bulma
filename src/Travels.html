@@ -4,82 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./Images/name-logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>Travels</title>
 </head>
-<body>
+<body class="has-background-grey-darker">
     <header>
-        <div class="logo-image">
-            <img src="/src/Images/name-logo.png" alt="Me">
-        </div>
-        <nav class="Navbar">
-            <ul>
-                <li><a href="/src/Home.html">Home</a></li>
-                <li><a href="/src/Accomp.html">Accomplishemnts</a></li>
-                <li><a href="/src/Hobbies.html">Hobbies</a></li>
-                <li><a href="/src/Travels.html">Travels</a></li>
-                <li><a href="/src/Photography.html">Photography</a></li>
-            </ul>
+        <nav class="navbar is-black pl1 pr-6-desktop">
+            <div class="navbar-brand">
+                <div>
+                    <img src="/src/Images/name-logo.png" alt="site-logo"  class="image is-96x96 mx-2">
+                </div>
+                
+                <a class="navbar-burger mt-4 mb-4 mr-4" id="burger" >
+                    <span ></span>
+                    <span ></span>
+                    <span ></span>
+                  </a>
+            </div>
+            <div class="navbar-menu has-background-black" id="nav-links">
+                <div class="navbar-end ">
+                    <a href="/src/Home.html" class="has-text-light navbar-item has-background-black is-hoverable pr-6">Home</a>
+                    <a href="/src/Accomp.html" class="has-text-light navbar-item has-background-black is-hoverable pr-6">Accomplishemnts</a>
+                    <a href="/src/Hobbies.html" class="has-text-light navbar-item has-background-black is-hoverable pr-6">Hobbies</a>
+                    <a href="/src/Travels.html" class="has-text-warning navbar-item has-background-black is-hoverable pr-6">Travels</a>
+                    <a href="/src/Photography.html" class="has-text-light navbar-item has-background-black is-hoverable pr-6">Photography</a>
+                 </div>
+            </div>
+
         </nav>
     </header>
+
     <main>
-        <h1>Places I have been</h1>
-        <div id="first-travel">
-            <img src="/src/Images/debreziet.jpg" alt="Travel image">
-            <h2>Debrezeit</h2>
-            <aside>
-                <p>
-                    My journey to Debre Zeit was a captivating adventure filled with cultural immersion and scenic beauty. The vibrant streets echoed with the rhythm of daily life, offering glimpses into the local traditions and bustling markets. Exploring the serene landscapes surrounding the town, from the tranquil lakeshores to the lush countryside, provided moments of tranquility and breathtaking views. Engaging with the warm-hearted locals enriched my experience, leaving me with cherished memories of their hospitality and the captivating charm of Debre Zeit's landscapes.
+        <h1 class="title is-size-1-desktop has-text-light has-text-centered mt-5">Places I have been</h1>
+        <div class="columns is-vcentered" id="first-travel">
+            <figure class="column">
+                <a href="/src/Images/debreziet.jpg"><img src="/src/Images/debreziet.jpg" class="p-3" alt="Travel image"></a>
+                <figcaption class="has-text-info has-text-centered">Fig: Debreziet, Ethiopia</figcaption>
+            </figure>
+            <aside class="column">
+                <h2 class="sub-title is-size-2-desktop has-text-centered is-size-4 has-text-light">Debrezeit</h2>
+                <p class="has-text-light is-size-6  is-size-4-desktop pl-3 pr-2">
+                    <span class="is-size-2 is-capitalized has-text-warning">M</span>y journey to Debre Zeit was a captivating adventure filled with cultural immersion and scenic beauty. The vibrant streets echoed with the rhythm of daily life, offering glimpses into the local traditions and bustling markets. Exploring the serene landscapes surrounding the town, from the tranquil lakeshores to the lush countryside, provided moments of tranquility and breathtaking views. Engaging with the warm-hearted locals enriched my experience, leaving me with cherished memories of their hospitality and the captivating charm of Debre Zeit's landscapes.
                 </p>
             </aside>
         </div>
-        <div id="second-travel">
-            <img src="/src/Images/German.jpg" alt="Travel image">
-            <h2>Germany</h2>
-            <aside>
-                <p>
-                    My travel to Germany was an incredible adventure. Exploring historic sites like the Brandenburg Gate and experiencing the medieval charm of towns like Rothenburg ob der Tauber was truly mesmerizing. The landscapes, from the Black Forest to the scenic Rhine Valley, were breathtaking. Engaging with locals and savoring the delightful cuisine enriched my experience. Germany's blend of history, culture, and stunning scenery left an indelible mark on my heart.
+        <div class="columns is-vcentered" id="second-travel">
+            <figure class="column">
+                <a href="/src/Images/German.jpg"><img src="/src/Images/German.jpg" class="p-3" alt="Travel image"></a>
+                <figcaption class="has-text-info has-text-centered">Fig: Darmstadt, Germany</figcaption>
+            </figure>
+            <aside class="column">
+                <h2 class="sub-title is-size-2-desktop has-text-centered is-size-4 has-text-light">Germany</h2>
+                <p class="has-text-light is-size-6  is-size-4-desktop pl-3 pr-2">
+                    <span class="is-size-2 is-capitalized has-text-warning">M</span>y travel to Germany was an incredible adventure. Exploring historic sites like the Brandenburg Gate and experiencing the medieval charm of towns like Rothenburg ob der Tauber was truly mesmerizing. The landscapes, from the Black Forest to the scenic Rhine Valley, were breathtaking. Engaging with locals and savoring the delightful cuisine enriched my experience. Germany's blend of history, culture, and stunning scenery left an indelible mark on my heart.
                 </p>
             </aside>
         </div>
-        <div id="third-travel">
-            <img src="/src/Images/France.jpg" alt="Travel image">
-            <h2>France</h2>
-            <aside>
-                <p>
-                    My journey to France was an enchanting odyssey through art, history, and exquisite landscapes. From strolling along the romantic streets of Paris, admiring the Eiffel Tower's grandeur, to exploring the stunning beauty of the French Riviera, each moment was a feast for the senses. The rich cultural tapestry, manifested in museums like the Louvre and the artistic allure of Montmartre, captivated me. Sampling French cuisine and sipping coffee at charming cafés added to the allure of this remarkable country. France's elegance, artistry, and diverse landscapes made it an unforgettable adventure.
+        <div class="columns is-vcentered" id="third-travel">
+            <figure class="column">
+                <a href="/src/Images/France.jpg"><img src="/src/Images/France.jpg" class="p-3" alt="Travel image"></a>
+                <figcaption class="has-text-info has-text-centered">Fig: strasbourg,France</figcaption>
+            </figure>
+            <aside class="column">
+                <h2 class="sub-title is-size-2-desktop has-text-centered is-size-4 has-text-light">France</h2>
+                <p class="has-text-light is-size-6  is-size-4-desktop pl-3 pr-2">
+                    <span class="is-size-2 is-capitalized has-text-warning">M</span>y journey to France was an enchanting odyssey through art, history, and exquisite landscapes. From strolling along the romantic streets of Paris, admiring the Eiffel Tower's grandeur, to exploring the stunning beauty of the French Riviera, each moment was a feast for the senses. The rich cultural tapestry, manifested in museums like the Louvre and the artistic allure of Montmartre, captivated me. Sampling French cuisine and sipping coffee at charming cafés added to the allure of this remarkable country. France's elegance, artistry, and diverse landscapes made it an unforgettable adventure.
                 </p>
             </aside>
         </div>
-        <h1>Places I wanna Go</h1>
-        <div id="First-want">
-            <img src="/src/Images/Bali.png" alt="Travel image">
-            <h2>Bali</h2>
-            <aside>
-                <p>
-                    Bali's allure lies in its tranquil beauty and rich culture. Its stunning landscapes, from lush rice terraces to beautiful beaches, promise relaxation and exploration. The island's spiritual essence and vibrant traditions, coupled with warm hospitality and delicious cuisine, make Bali an irresistible destination for those seeking serenity and adventure in a breathtaking setting.
+        <h1 class="title is-size-1-desktop has-text-light has-text-centered mt-5">Places I wanna Go</h1>
+        <div class="columns is-vcentered" id="First-want">
+            <figure class="column">
+                <a href="/src/Images/Bali.png"><img src="/src/Images/Bali.png" class="p-3" alt="Travel image"></a>
+                <figcaption class="has-text-info has-text-centered">Fig: Bali, Indonesia</figcaption>
+            </figure>
+            <aside class="column">
+                <h2 class="sub-title is-size-2-desktop has-text-centered is-size-4 has-text-light">Bali</h2>
+                <p class="has-text-light is-size-6  is-size-4-desktop pl-3 pr-2">
+                    <span class="is-size-2 is-capitalized has-text-warning">B</span>ali's allure lies in its tranquil beauty and rich culture. Its stunning landscapes, from lush rice terraces to beautiful beaches, promise relaxation and exploration. The island's spiritual essence and vibrant traditions, coupled with warm hospitality and delicious cuisine, make Bali an irresistible destination for those seeking serenity and adventure in a breathtaking setting.
                 </p>
             </aside>
         </div>
         </main>
-        <footer>
-            <div class="socialmedia">
-                <div class="icon">
-                    <a href="https://www.instagram.com/dagmawi_elias/"><img src="/src/Images/instagram.svg" alt="Instagram Icon"></a>
-                </div>
-                <div class="icon">
-                    <a href="https://twitter.com/elias_dagmawi"><img src="/src/Images/twitter.svg" alt="Twitter Icon"></a>
-                </div>
-                <div class="icon">
-                    <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/"><img src="/src/Images/linkedin.svg" alt="Linkedin Icon"></a>
+        <footer class="footer has-background-grey columns has-gap">
+            <div class="column">
+                <div class="columns ">
+                    <div class="column">
+                        <a href="https://www.instagram.com/dagmawi_elias/">
+                            <img src="/src/Images/instagram.svg" class="image is-48x48 mx-2" alt="Instagram Icon">
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a href="https://twitter.com/elias_dagmawi">
+                            <img src="/src/Images/twitter.svg" class="image is-48x48 mx-2" alt="Twitter Icon"></a>
+                    </div>
+                    <div class="column">
+                        <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/">
+                            <img src="/src/Images/linkedin.svg" class="image is-48x48 mx-2" alt="Linkedin Icon">
+                        </a>
+                    </div>
                 </div>
             </div>
     
-            <div class="contact">
-                    <div class="Name">Dagmawi Elias</div>
-                    <div class="Phone Number"><img src="/src/Images/phone-solid.svg" alt="phone logo"></div>
-                    <div class="email"><img src="/src/Images/at-solid.svg" alt="@ logo"></div>
-                    <div class="address"><img src="/src/Images/location-dot-solid.svg" alt="location logo"></div>
+            <div class="column">
+                    <div class="columns">
+                        <img src="/src/Images/phone-solid.svg" class="column image is-64x64 is-2 mx-" alt="phone logo" >
+                        <a href="tel:+251-911-110-650" class="has-text-light is-underlined column">Phone Number: +(251) 911-1106-50</a>
+                    </div>
+                    <div class="columns">
+                        <img src="/src/Images/at-solid.svg" class="column image is-64x64 is-2 mx" alt="@ logo">
+                        <a href="mailto:dagmawielias2@gmail.com" class="column has-text-light is-underlined">dagmawielias2@gmail.com</a> 
+                    </div>
+                    <div class="columns">
+                        <img src="/src/Images/location-dot-solid.svg" class="column image is-64x64 is-2 mx" alt="location logo">
+                        <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="column has-text-light is-underlined">
+                            Addis Ababa Institue of Technology
+                        </a>
+                    </div>
             </div>
         </footer>
+        <script src="/src/Java Script/Navigatioin-Bar.js"></script>
     </body>
 </html>

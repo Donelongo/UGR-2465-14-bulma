@@ -4,50 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./Images/name-logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>Home</title>
 </head>
-<body>
+<body class="has-background-grey-darker is-fullheight">
     <header>
-        <div class="logo-image">
-            <img src="/src/Images/name-logo.png" alt="Me">
-        </div>
-        <nav class="Navbar">
-            <ul>
-                <li><a href="/src/Home.html">Home</a></li>
-                <li><a href="/src/Accomp.html">Accomplishemnts</a></li>
-                <li><a href="/src/Hobbies.html">Hobbies</a></li>
-                <li><a href="/src/Travels.html">Travels</a></li>
-                <li><a href="/src/Photography.html">Photography</a></li>
-            </ul>
+        <nav class="navbar is-black pl-1 pr-6-desktop">
+            <div class="navbar-brand">
+                <div>
+                    <img src="/src/Images/name-logo.png" alt="site-logo" class="image is-96x96 mx-2">
+                </div>
+                
+                <a class="navbar-burger mt-4 mb-4 mr-4" id="burger" >
+                    <span ></span>
+                    <span ></span>
+                    <span ></span>
+                  </a>
+            </div>
+            <div class="navbar-menu has-background-black" id="nav-links">
+                <div class="navbar-end ">
+                    <a href="/src/Home.html" class="has-text-warning navbar-item has-background-black is-hoverable pr-6">Home</a>
+                    <a href="/src/Accomp.html" class="has-text-light navbar-item has-background-black is-hoverable pr-6">Accomplishemnts</a>
+                    <a href="/src/Hobbies.html" class="has-text-light navbar-item has-background-black is-hoverable pr-6">Hobbies</a>
+                    <a href="/src/Travels.html" class="has-text-light navbar-item has-background-black is-hoverable pr-6">Travels</a>
+                    <a href="/src/Photography.html" class="has-text-light navbar-item has-background-black is-hoverable pr-6">Photography</a>
+                 </div>
+            </div>
+
         </nav>
     </header>
-    <main>
-        <img src="/src/Images/me.jpg" alt="My picture">
-        <aside>
-            <p>
-                I am a student at the University of Addis Ababa Institute of Technology, Ethiopia.
-            </p>
-        </aside>
+    <main class="main">
+        <div class="container">
+            <div class="columns is-vcentered pb-6">
+                <div class="column pb-6 mb-6 is-5-desktop has-text-centered m-5 is-flex-grow">
+                    <img  src="/src/Images/me.jpg" alt="My picture">
+                </div>
+                <div class="column is-8-desktop">
+                    <p class="has-text-light is-size- is-size-4-desktop  p-3">
+                        <span class="is-size-2 is-capitalized has-text-warning">M</span>y name is <strong class="is-size-4 has-text-weight-bold has-text-primary">Dagmawi Elias</strong>.
+                        <br/><br/><span class="is-size-2 is-capitalized has-text-warning">I</span>'m a Software Engineering student at the University of Addis Ababa Institute of Technology, Ethiopia. My portfolio highlights my technological expertise in [specific technologies], complemented by a track record of personal achievements that underscore my dedication and growth, both in life and in the realm of software development.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
     </main>
-    <footer>
-        <div class="socialmedia">
-            <div class="icon">
-                <a href="https://www.instagram.com/dagmawi_elias/"><img src="/src/Images/instagram.svg" alt="Instagram Icon"></a>
-            </div>
-            <div class="icon">
-                <a href="https://twitter.com/elias_dagmawi"><img src="/src/Images/twitter.svg" alt="Twitter Icon"></a>
-            </div>
-            <div class="icon">
-                <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/"><img src="/src/Images/linkedin.svg" alt="Linkedin Icon"></a>
+    <div class=""></div>
+    <footer class="footer has-background-grey columns mt-6 p-0 pb-6">
+        <div class="column">
+            <div class="columns">
+                <div class="column">
+                    <a href="https://www.instagram.com/dagmawi_elias/">
+                        <img src="/src/Images/instagram.svg" class="image is-48x48 mx-2" alt="Instagram Icon">
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="https://twitter.com/elias_dagmawi">
+                        <img src="/src/Images/twitter.svg" class="image is-48x48 mx-2" alt="Twitter Icon"></a>
+                </div>
+                <div class="column">
+                    <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/">
+                        <img src="/src/Images/linkedin.svg" class="image is-48x48 mx-2" alt="Linkedin Icon">
+                    </a>
+                </div>
             </div>
         </div>
 
-        <div class="contact">
-                <div class="Name">Dagmawi Elias</div>
-                <div class="Phone Number"><img src="/src/Images/phone-solid.svg" alt="phone logo"></div>
-                <div class="email"><img src="/src/Images/at-solid.svg" alt="@ logo"></div>
-                <div class="address"><img src="/src/Images/location-dot-solid.svg" alt="location logo"></div>
+        <div class="column">
+                <div class="columns">
+                    <img src="/src/Images/phone-solid.svg" class="column image is-64x64 is-2 mx-" alt="phone logo" >
+                    <a href="tel:+251-911-110-650" class="has-text-light is-underlined column">Phone Number: +(251) 911-1106-50</a>
+                </div>
+                <div class="columns">
+                    <img src="/src/Images/at-solid.svg" class="column image is-64x64 is-2 mx" alt="@ logo">
+                    <a href="mailto:dagmawielias2@gmail.com" class="column has-text-light is-underlined">dagmawielias2@gmail.com</a> 
+                </div>
+                <div class="columns">
+                    <img src="/src/Images/location-dot-solid.svg" class="column image is-64x64 is-2 mx" alt="location logo">
+                    <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="column has-text-light is-underlined">
+                        Addis Ababa Institue of Technology
+                    </a>
+                </div>
         </div>
     </footer>
+    <script src="/src/Java Script/Navigatioin-Bar.js"></script>
 </body>
 </html>
